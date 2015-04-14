@@ -1,14 +1,8 @@
 console.log('Started callback-example');
 
-// the wrong way:
-// 
-// var data = load()
-// var info = process()
-// send(info)
-
-// the node way:
-
-load(process(send));
+var data = load()
+var info = process()
+send(info)
 
 function load(loaded) {
 	console.log('load');
